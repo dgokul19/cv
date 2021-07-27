@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/cv/static/css/main.bd39fccb.chunk.css",
+    "main.js": "/cv/static/js/main.00c90932.chunk.js",
+    "main.js.map": "/cv/static/js/main.00c90932.chunk.js.map",
+    "runtime-main.js": "/cv/static/js/runtime-main.395691a1.js",
+    "runtime-main.js.map": "/cv/static/js/runtime-main.395691a1.js.map",
+    "static/js/2.f498322a.chunk.js": "/cv/static/js/2.f498322a.chunk.js",
+    "static/js/2.f498322a.chunk.js.map": "/cv/static/js/2.f498322a.chunk.js.map",
+    "static/js/3.e97f946e.chunk.js": "/cv/static/js/3.e97f946e.chunk.js",
+    "static/js/3.e97f946e.chunk.js.map": "/cv/static/js/3.e97f946e.chunk.js.map",
+    "index.html": "/cv/index.html",
+    "static/css/main.bd39fccb.chunk.css.map": "/cv/static/css/main.bd39fccb.chunk.css.map",
+    "static/js/2.f498322a.chunk.js.LICENSE.txt": "/cv/static/js/2.f498322a.chunk.js.LICENSE.txt",
+    "static/media/about.scss": "/cv/static/media/about_bg.8bcec1fc.jpg",
+    "static/media/contactPage.scss": "/cv/static/media/contact_bg.9232ba78.jpg",
+    "static/media/gokulan-resume.3044910a.pdf": "/cv/static/media/gokulan-resume.3044910a.pdf",
+    "static/media/homepage.scss": "/cv/static/media/landing_bg.1578864f.jpg",
+    "static/media/my_logo.c6b74ad3.jpeg": "/cv/static/media/my_logo.c6b74ad3.jpeg",
+    "static/media/pic_01.7f7c4ac7.jpeg": "/cv/static/media/pic_01.7f7c4ac7.jpeg",
+    "static/media/pic_02.a22b8488.jpeg": "/cv/static/media/pic_02.a22b8488.jpeg",
+    "static/media/resumePage.scss": "/cv/static/media/resume_bg.3636e5c2.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.395691a1.js",
+    "static/js/2.f498322a.chunk.js",
+    "static/css/main.bd39fccb.chunk.css",
+    "static/js/main.00c90932.chunk.js"
+  ]
+}
