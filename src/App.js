@@ -1,25 +1,58 @@
-import logo from './logo.svg';
+import React, {useEffect} from 'react';
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route,
+} from "react-router-dom";
+// CSS Imports
 import './App.css';
+import './assets/css/common.scss';
+import './assets/css/homepage.scss';
+import './assets/css/about.scss';
+// Components imports
+import AnimateLoaded from './components/Util/AnimatedComponent';
+import LandingComponent from './components/LandingComponent';
+import AboutComponent from './components/AboutComponent';
+import ResumeComponent from './components/ResumeComponent';
+import Navbar from './components/Navbar';
+import ContactComponent from './components/ContactComponent';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <div className="App">
+            <Router>
+                <Navbar/>
+
+                <Switch>
+                    <Route path="/about">
+                        <AnimateLoaded>
+                            <AboutComponent />
+                        </AnimateLoaded>
+                    </Route>
+                    <Route path="/resume">
+                        <AnimateLoaded>
+                            <ResumeComponent />
+                        </AnimateLoaded>
+                    </Route>
+                    <Route path="/portfolio">
+                        <AnimateLoaded>
+                            <ResumeComponent />
+                        </AnimateLoaded>
+                    </Route>
+                    <Route exact path="/">
+                        <AnimateLoaded>
+                            <LandingComponent />
+                        </AnimateLoaded>
+                    </Route>
+                    <Route path="/contact">
+                        <AnimateLoaded>
+                            <ContactComponent />
+                        </AnimateLoaded>
+                    </Route>
+                </Switch>
+            </Router>
+        </div>
+    );
 }
 
 export default App;

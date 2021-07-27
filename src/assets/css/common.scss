@@ -1,0 +1,206 @@
+img{
+  width: 100%;
+}
+.fade-in {   opacity: 0;
+    transition: 0.1s ease-in-out all;
+}
+.fade-in.visible {
+    height: inherit;
+    opacity: 1;
+}
+.navigationBar {
+    width: 100%;
+    height: 60px;
+    margin: 0 auto;
+    position: fixed;
+    top:0;
+    left: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.11);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--primary-color);
+    z-index: 9;
+    &.navBackground {
+        background-color: var(--active-nav-link);
+        .menuContent ul li a {
+            color: var(--primary-dark-grey);
+        }
+    }
+    .menuContent {
+        font-family: var(--logo-font);
+        width: 80%;
+        height: 100%;
+        margin:0 auto;
+        ul {
+            list-style: none;
+            width: 60%;
+            height: 100%;
+            margin: auto;
+            display: flex;
+            padding: 0px;
+            align-items: center;
+            justify-content: space-between;
+            li{
+                text-transform: uppercase;
+                font-size: .81rem;
+                position: relative;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                &:nth-child(3){ 
+                    font-size: 2rem;
+                    letter-spacing: 1px;
+                }
+                &.active::before {
+                    content: '';
+                    display: block;
+                    width: 160%;
+                    height: 2px;
+                    background-color: var(--active-nav-link);
+                    position: absolute;
+                    left:-30%;
+                    bottom: 0px;
+                }
+                &.active::after {
+                    content: '';
+                    position: absolute;
+                    left: 32%;
+                    top: 100%;
+                    width: 0;
+                    height: 0;
+                    border-left: 10px solid transparent;
+                    border-right: 10px solid transparent;
+                    border-top: 10px solid var(--active-nav-link);
+                    clear: both;
+                }
+                a {
+                    text-decoration: none;
+                    color: var(--primary-color);
+                    cursor: pointer;
+                    letter-spacing: 1px;
+                    img {
+                        width: 40px;
+                        border-radius: 30px;
+                    }
+                }
+            }
+        }
+    }
+}
+.bodyIcons {
+    width: 100px;
+    height: 80%;
+    // border: 1px solid white;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:0px;
+    padding:0px;
+    top:10%;
+    left: 0px;
+    list-style: none;
+    flex-direction: column;
+    li {
+        padding: 30px 0;
+        a {
+            font-size: 1.2rem;
+            color: var(--primary-color);
+        }
+    }
+    &::before{
+        content: '';
+        display: block;
+        width: 1px;
+        height: 35%;
+        background-color: aliceblue;
+    }
+    &::after{
+        content: '';
+        display: block;
+        width: 1px;
+        height: 35%;
+        background-color: aliceblue;
+    }
+}
+.sideFadedContent {
+    position: fixed;
+    z-index: 99;
+    font-size: 5rem;
+    transform: rotateZ(90deg);
+    top: 25%;
+    color: rgba(240, 248, 255, .14);
+    right: -10%;
+}
+.wave {
+    animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
+    animation-duration: 2.1s; /* Change to speed up or slow down */
+    animation-iteration-count: infinite; /* Never stop waving :) */
+    transform-origin: 70% 70%; /* Pivot around the bottom-left palm */
+    display: inline-block;
+}
+.knowmore {
+    display: inline-block;
+    margin-top: 1em;
+    height: 50px;
+    min-width: 150px;
+    border-radius: 30px;
+    padding: 0px 2em;
+    text-align: center;
+    line-height: 50px;
+    border: 2px solid var(--active-nav-link);
+    border-radius: 30px;
+    text-decoration: none;
+    color: var(--active-nav-link);
+    letter-spacing: 2px;
+    transition: 0.3s ease-in-out all;
+    position: relative;
+    left: 100px;
+    text-transform: capitalize;
+    i{
+        font-size: 1rem;
+    }
+    &:hover {
+        background-color: var(--active-nav-link);
+        border-color: var(--active-nav-link);
+        color: #111;
+    }
+    &::before {
+        content: '';
+        display: block;
+        height: 1px;
+        width: 100px;
+        background-color: var(--active-nav-link);
+        position: absolute;
+        left: -100px;
+        top: 25px;
+    }
+}
+
+@keyframes wave-animation {
+    0% {
+        transform: rotate(0deg);
+    }
+    10% {
+        transform: rotate(14deg);
+    } /* The following five values can be played with to make the waving more or less extreme */
+    20% {
+        transform: rotate(-8deg);
+    }
+    30% {
+        transform: rotate(14deg);
+    }
+    40% {
+        transform: rotate(-4deg);
+    }
+    50% {
+        transform: rotate(10deg);
+    }
+    60% {
+        transform: rotate(0deg);
+    } /* Reset for the last half to pause */
+    100% {
+        transform: rotate(0deg);
+    }
+}
