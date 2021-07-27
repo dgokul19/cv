@@ -39,7 +39,7 @@ function App() {
                             <ResumeComponent />
                         </AnimateLoaded>
                     </Route>
-                    <Route exact path="/">
+                    <Route exact path="/cv">
                         <AnimateLoaded>
                             <LandingComponent />
                         </AnimateLoaded>
