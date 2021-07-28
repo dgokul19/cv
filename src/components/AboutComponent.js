@@ -1,10 +1,16 @@
-import React, {Fragment} from 'react';
+import React, {Fragment, useEffect} from 'react';
 import SocialIcons from './Util/SocialIcons';
 import SideHighlightContent from './Util/SideHighlightContent';
+import { handleNavbarScroll } from '../common/utils';
 
 import AboutPic from '../assets/images/pic_02.jpeg';
 const AboutComponent = () => {
     const totalExperience = new Date().getFullYear() - 2015;
+    useEffect(() => {
+        let scrollElement = document.querySelector('.aboutPageComponent');
+        scrollElement.addEventListener('scroll', handleNavbarScroll);
+        return () => scrollElement ? scrollElement.removeEventListener('scroll', handleNavbarScroll) : null;
+    }, []);
     return (
         <Fragment>
             <div className="aboutPageComponent">

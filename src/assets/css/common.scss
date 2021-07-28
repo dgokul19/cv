@@ -21,6 +21,9 @@ img{
     justify-content: space-between;
     color: var(--primary-color);
     z-index: 9;
+    .mobileMenu {
+        display: none;
+    }
     &.navBackground {
         background-color: var(--active-nav-link);
         .menuContent ul li a {
@@ -128,10 +131,10 @@ img{
     position: fixed;
     z-index: 99;
     font-size: 5rem;
-    transform: rotateZ(90deg);
-    top: 25%;
+    writing-mode :vertical-lr;
+    top: 20%;
     color: rgba(240, 248, 255, .14);
-    right: -10%;
+    right: -5%;
 }
 .wave {
     animation-name: wave-animation; /* Refers to the name of your @keyframes element below */

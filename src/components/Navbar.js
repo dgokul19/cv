@@ -1,6 +1,6 @@
 import React, { Fragment, useEffect, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-
+ import { RiMenuFoldLine } from 'react-icons/ri';
 import Logo from '../assets/images/my_logo.jpeg';
 
 const Navbar = () => {
@@ -23,10 +23,16 @@ const Navbar = () => {
                     <ul>
                         <li className={activeState === 'about' && 'active'}><Link to="/about">About</Link></li>
                         <li className={activeState === 'resume' && 'active'}><Link to="/resume">Resume </Link></li>
-                        <li className={activeState === '/' && 'active'}><Link to="/"><img src={Logo} alt={`My Logo Image`}/></Link></li>
+                        <li className={activeState === '/cv' && 'active'}><Link to="/cv"><img src={Logo} alt={`My Logo Image`}/></Link></li>
                         <li className={activeState === 'portfolio' && 'active'}><Link to="/portfolio">Portfolio</Link></li>
                         <li className={activeState === 'contact' && 'active'}><Link to="/contact">Contact</Link></li>
                     </ul>
+                </div>
+                <div className={`mobileMenu`}>
+                    <div className={`logoClx`}><Link to="/cv"><img src={Logo} alt={`My Logo Image`}/></Link></div>
+                    <div className={`menuBtn`}>
+                        <RiMenuFoldLine />
+                    </div>
                 </div>
             </div>
         </Fragment>

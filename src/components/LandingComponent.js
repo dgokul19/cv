@@ -1,13 +1,20 @@
-import React, { Fragment } from 'react';
+import React, { Fragment, useEffect } from 'react';
 
 import Navbar from './Navbar';
 import TypeComponent from './Util/Typewritter';
 import SocialIcons from './Util/SocialIcons';
 
 import profPic from '../assets/images/pic_01.jpeg';
-import ResumePdf from '../assets/docs/gokulan-resume.pdf';
+import { handleNavbarScroll } from '../common/utils';
 
 const LandingComponent = () => {
+
+    useEffect(() => {
+        let scrollElement = document.querySelector('.landingPage');
+        scrollElement.addEventListener('scroll', handleNavbarScroll);
+        return () => scrollElement ? scrollElement.removeEventListener('scroll', handleNavbarScroll) : null;
+    }, []);
+
     return ( 
         <Fragment>
             <div className="landingPage">

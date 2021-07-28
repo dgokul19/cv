@@ -1,0 +1,95 @@
+@media (max-width : 600px) {
+    // Navigation Bar Mobile
+    .navigationBar {
+        justify-content: flex-end;
+        .menuContent{
+            display: none;
+        }
+        .mobileMenu {
+            width: 50%;
+            padding: 0px 1em;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .logoClx {
+                width: 40px;
+                height: 40px;
+                border-radius: 30px;
+                overflow: hidden;
+            }
+            .menuBtn {
+                svg {
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+    .bodyIcons {
+        width: 50px;
+    }
+    .sideFadedContent {
+        bottom: 5%;
+        right: -17%;
+        font-size: 3rem;
+        top: auto;
+    }
+    .landingPage {
+        overflow: hidden;
+        overflow-y: auto;
+        .homeContent {
+            width: 100%;
+            flex-direction: column-reverse;
+            height: auto;
+            margin-top: 80px;
+            padding-bottom: 2em;
+            .heloPic {
+                width: calc(100% - 120px);
+                height: auto;
+                margin-left: unset;
+            }
+            .heloContent {
+                width: 65%;
+                margin-top: 50px;
+                .Typewriter {
+                    font-size: 1.2rem;
+                }
+                h1 {
+                    font-size: 3rem;
+                }
+                p {
+                    width: 100%;
+                }
+            } 
+        }
+    }
+    .aboutPageComponent {
+        overflow: hidden;
+        overflow-y: auto;
+        .aboutContent {
+            flex-direction: column-reverse;
+            justify-content: flex-start;
+            margin-top: 80px;
+            padding: 0;
+            height: auto;
+            padding-bottom: 2rem;
+            .rightBox {
+                width: 100%;
+                margin-bottom: 2rem;
+                padding-left: 0;
+                align-items: center;
+                .aboutPara {
+                    padding-bottom: 5rem;
+                }
+                h1 {
+                    text-align: center;
+                }
+                a.knowmore{
+                    left: 10%;
+                    &::before{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
