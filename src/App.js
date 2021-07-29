@@ -9,6 +9,8 @@ import './App.css';
 import './assets/css/common.scss';
 import './assets/css/homepage.scss';
 import './assets/css/about.scss';
+import './assets/css/resumePage.scss';
+
 import './assets/css/responsive.scss';
 
 // Components imports
