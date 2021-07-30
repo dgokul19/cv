@@ -52,7 +52,7 @@ const AboutComponent = () => {
                                 <li><i class="fa fa-angle-double-right" aria-hidden="true"></i>
  Surfing & Watching movies..</li>
                             </ul>
-                            <a href={`/resume`} className={`knowmore`}> Explore Qualification <i className="fa fa-angle-double-right"></i></a>
+                            <a href="/resume" className={`knowmore`}> Explore Qualification <i className="fa fa-angle-double-right"></i></a>
                         </div>
                     </div>
                 </div>

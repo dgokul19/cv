@@ -29,7 +29,7 @@ const LandingComponent = () => {
                             <p>{`I enjoy embracing the lessons 
                             learned from failure, stand up and continue to grow.`}
                         </p>
-                        <a href={`/about`} className={`knowmore`}> know more <i className="fa fa-angle-double-right"></i></a>
+                        <a href="/about" className={`knowmore`}> know more <i className="fa fa-angle-double-right"></i></a>
                     </div>
                     <div className="heloPic">
                         <img src={profPic} alt="My profile"/>
