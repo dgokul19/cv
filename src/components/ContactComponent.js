@@ -1,4 +1,5 @@
 import React, { useState,useEffect, Fragment, useCallback } from 'react';
+import { Link } from 'react-router-dom';
 import { FaSmile } from 'react-icons/fa';
 import { RiFacebookFill, RiLinkedinFill, RiInstagramFill, RiTwitterFill } from 'react-icons/ri';
 // Components imports
@@ -36,14 +37,14 @@ const ContactComponent = () => {
                         <div className={`contactLinks`}>
                             <h3>EMAIL</h3>
                             <ul>
-                                <li><a href="mailto:g.dhakshinamoorthy@walmart.com">g.dhakshinamoorthy@walmart.com</a></li>
-                                <li><a href="mailto:dgokul19@gmail.com">dgokul19@gmail.com</a></li>
+                                <li><Link href="mailto:g.dhakshinamoorthy@walmart.com">g.dhakshinamoorthy@walmart.com</Link></li>
+                                <li><Link href="mailto:dgokul19@gmail.com">dgokul19@gmail.com</Link></li>
                             </ul>
 
                             <h3>REACH</h3>
                             <ul>
-                                <li><a href="mailto:g.dhakshinamoorthy@walmart.com">+91-(812)-(270)-1839</a></li>
-                                <li><a href="mailto:dgokul19@gmail.com">+914367 - 271839</a></li>
+                                <li><Link href="mailto:g.dhakshinamoorthy@walmart.com">+91-(812)-(270)-1839</Link></li>
+                                <li><Link href="mailto:dgokul19@gmail.com">+914367 - 271839</Link></li>
                             </ul>
                             
                             <h3>CONNECT</h3>

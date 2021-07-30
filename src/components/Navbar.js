@@ -33,7 +33,7 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <div className={`mobileMenu`}>
-                    <div className={`logoClx`}><Link to="/cv"><img src={Logo} alt={`My Logo Image`}/></Link></div>
+                    <div className={`logoClx`}><Link to="/"><img src={Logo} alt={`My Logo Image`}/></Link></div>
                     <div className={`menuBtn`} onClick={() => SetMobileNav(true)}>
                         <RiMenuFoldLine />
                     </div>
@@ -42,7 +42,7 @@ const Navbar = () => {
             <div className={`backDropMenu ${openMobileNav ? 'activate' : null}`}>
                 <div className={`menuContainer`}>
                     <ul>
-                        <li className={activeState === '/' && 'active'}><Link to="/cv">Home</Link></li>
+                        <li className={activeState === '/' && 'active'}><Link to="/">Home</Link></li>
                         <li className={activeState === 'about' && 'active'}><Link to="/about">About</Link></li>
                         <li className={activeState === 'resume' && 'active'}><Link to="/resume">Resume </Link></li>
                         <li className={activeState === 'blog' && 'active'}><Link to="/blog">Blog</Link></li>
