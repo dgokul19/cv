@@ -8,4 +8,8 @@ export const handleNavbarScroll = (event) => {
         navElement.classList.remove('navBackground');
 
     }
-}
+};
+
+export const formatBlogDate = (date = new Date()) => {
+    return new Date(date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+};

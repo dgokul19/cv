@@ -11,6 +11,7 @@ import './assets/css/homepage.scss';
 import './assets/css/about.scss';
 import './assets/css/resumePage.scss';
 import './assets/css/contactPage.scss';
+import './assets/css/blogPage.scss';
 
 import './assets/css/responsive.scss';
 
@@ -19,8 +20,9 @@ import AnimateLoaded from './components/Util/AnimatedComponent';
 import LandingComponent from './components/LandingComponent';
 import AboutComponent from './components/AboutComponent';
 import ResumeComponent from './components/ResumeComponent';
-import Navbar from './components/Navbar';
 import ContactComponent from './components/ContactComponent';
+import BlogComponent from './components/BlogComponent';
+import Navbar from './components/Navbar';
 
 function App() {
     return (
@@ -39,9 +41,9 @@ function App() {
                             <ResumeComponent />
                         </AnimateLoaded>
                     </Route>
-                    <Route path="/portfolio">
+                    <Route path="/blog">
                         <AnimateLoaded>
-                            <ResumeComponent />
+                            <BlogComponent />
                         </AnimateLoaded>
                     </Route>
                     <Route exact path="/">
