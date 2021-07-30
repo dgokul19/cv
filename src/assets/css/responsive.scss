@@ -93,6 +93,31 @@
             }
         }
     }
+    .contactPageComponent {
+        overflow: hidden;
+        overflow-y: auto;
+        .contactContainer {
+            h1{
+                font-size: 1.5rem;
+            }
+            .contactBox {
+                flex-direction: column;
+                .contactLinks {
+                    width: 300px;
+                    padding: 1em;
+                    margin-bottom: 2em;
+                    border-right: 1px solid var(--active-nav-link);
+                    .socialIcons {
+                        padding: 0px;
+                    }
+                }
+                .contactForm {
+                    width: 300px;
+                    border-left: 1px solid var(--active-nav-link);
+                }
+            }
+        }
+    }
     .resumePageComponent {
         .resumeContent {
             width: 80%;

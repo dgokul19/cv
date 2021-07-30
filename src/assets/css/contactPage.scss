@@ -34,11 +34,11 @@
             height: auto;
             padding: 2em;
             display: flex;
-            justify-content: center;
+            justify-content: space-evenly;
             box-sizing: border-box;
             .contactLinks {
                 width: 320px;
-                height: 480px;
+                height: 420px;
                 border: 1px solid var(--active-nav-link);
                 border-right: none;
                 display: flex;
@@ -85,6 +85,57 @@
 
             .contactForm {
                 width: 700px;
+                padding: 3em 2em;
+                border:1px solid var(--active-nav-link);
+                border-left: none;
+                box-sizing: border-box;
+                .formRow {
+                    display: flex;
+                    justify-content: space-around;
+                }
+                .formField{
+                    width: 30%;
+                    height: 50px;
+                    border:1px solid rgba(255,255,255,.2);
+                    &.textArea{
+                        width: 97%;
+                        margin-top: 3em;
+                        height: 140px;
+                    }
+                    input {
+                        width: 100%;
+                        font-size: 1rem;
+                        letter-spacing: 1px;
+                        text-align: center;
+                        height: 100%;
+                        background-color: transparent;
+                        border:none
+                    }
+                    textarea {
+                        width: 100%;
+                        font-size: 1rem;
+                        letter-spacing: 1px;
+                        text-align: center;
+                        height: 100%;
+                        background-color: transparent;
+                        border:none;
+                        font-family:var(--font-family)
+                    }
+                }
+                button.knowmore {
+                    background-color: transparent;
+                    border-color: var(--primary-color);
+                    color: var(--primary-color);
+                    border-radius: 0;
+                    left: 10px;
+                    &::before{
+                        display: none;
+                    }
+                    &:hover{
+                        color: var(--primary-dark);
+                        background-color: var(--primary-color);
+                    }
+                }
             }
         }
     }

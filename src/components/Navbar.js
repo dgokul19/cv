@@ -27,7 +27,7 @@ const Navbar = () => {
                     <ul>
                         <li className={activeState === 'about' && 'active'}><Link to="/about">About</Link></li>
                         <li className={activeState === 'resume' && 'active'}><Link to="/resume">Resume </Link></li>
-                        <li className={activeState === '/cv' && 'active'}><Link to="/cv"><img src={Logo} alt={`My Logo Image`}/></Link></li>
+                        <li className={activeState === '/' && 'active'}><Link to="/"><img src={Logo} alt={`My Logo Image`}/></Link></li>
                         <li className={activeState === 'portfolio' && 'active'}><Link to="/portfolio">Portfolio</Link></li>
                         <li className={activeState === 'contact' && 'active'}><Link to="/contact">Contact</Link></li>
                     </ul>
@@ -42,7 +42,7 @@ const Navbar = () => {
             <div className={`backDropMenu ${openMobileNav ? 'activate' : null}`}>
                 <div className={`menuContainer`}>
                     <ul>
-                        <li className={activeState === '/cv' && 'active'}><Link to="/cv">Home</Link></li>
+                        <li className={activeState === '/' && 'active'}><Link to="/cv">Home</Link></li>
                         <li className={activeState === 'about' && 'active'}><Link to="/about">About</Link></li>
                         <li className={activeState === 'resume' && 'active'}><Link to="/resume">Resume </Link></li>
                         <li className={activeState === 'portfolio' && 'active'}><Link to="/portfolio">Portfolio</Link></li>

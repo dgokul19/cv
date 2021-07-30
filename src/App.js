@@ -1,6 +1,6 @@
 import React, {useEffect} from 'react';
 import {
-    BrowserRouter as Router,
+    HashRouter as Router,
     Switch,
     Route,
 } from "react-router-dom";
@@ -10,6 +10,7 @@ import './assets/css/common.scss';
 import './assets/css/homepage.scss';
 import './assets/css/about.scss';
 import './assets/css/resumePage.scss';
+import './assets/css/contactPage.scss';
 
 import './assets/css/responsive.scss';
 
@@ -24,7 +25,7 @@ import ContactComponent from './components/ContactComponent';
 function App() {
     return (
         <div className="App">
-            <Router>
+            <Router basename='/'>
                 <Navbar/>
 
                 <Switch>
@@ -43,7 +44,7 @@ function App() {
                             <ResumeComponent />
                         </AnimateLoaded>
                     </Route>
-                    <Route exact path="/cv">
+                    <Route exact path="/">
                         <AnimateLoaded>
                             <LandingComponent />
                         </AnimateLoaded>
