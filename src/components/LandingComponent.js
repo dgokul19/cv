@@ -1,6 +1,6 @@
 import React, { Fragment, useEffect } from 'react';
+import {Link} from 'react-router-dom';
 
-import Navbar from './Navbar';
 import TypeComponent from './Util/Typewritter';
 import SocialIcons from './Util/SocialIcons';
 
@@ -29,7 +29,7 @@ const LandingComponent = () => {
                             <p>{`I enjoy embracing the lessons 
                             learned from failure, stand up and continue to grow.`}
                         </p>
-                        <a href="/about" className={`knowmore`}> know more <i className="fa fa-angle-double-right"></i></a>
+                        <Link to="/about" className={`knowmore`}> know more <i className="fa fa-angle-double-right"></i></Link>
                     </div>
                     <div className="heloPic">
                         <img src={profPic} alt="My profile"/>

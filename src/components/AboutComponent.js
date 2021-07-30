@@ -1,4 +1,5 @@
 import React, {Fragment, useEffect} from 'react';
+import {Link} from 'react-router-dom';
 import SocialIcons from './Util/SocialIcons';
 import SideHighlightContent from './Util/SideHighlightContent';
 import { handleNavbarScroll } from '../common/utils';
@@ -52,7 +53,7 @@ const AboutComponent = () => {
                                 <li><i class="fa fa-angle-double-right" aria-hidden="true"></i>
  Surfing & Watching movies..</li>
                             </ul>
-                            <a href="/resume" className={`knowmore`}> Explore Qualification <i className="fa fa-angle-double-right"></i></a>
+                            <Link to="/resume" className={`knowmore`}> Explore Qualification <i className="fa fa-angle-double-right"></i></Link>
                         </div>
                     </div>
                 </div>
