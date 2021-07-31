@@ -30,13 +30,17 @@
     }
     .sideFadedContent {
         bottom: 5%;
-        right: -17%;
+        right: 0%;
         font-size: 3rem;
         top: auto;
+        z-index: 1;
+        h1 {
+            margin:0
+        }
     }
     .landingPage {
         overflow: hidden;
-        overflow-y: auto;
+        overflow-y: scroll;
         .homeContent {
             width: 100%;
             flex-direction: column-reverse;
@@ -65,7 +69,7 @@
     }
     .aboutPageComponent {
         overflow: hidden;
-        overflow-y: auto;
+        overflow-y: scroll;
         .aboutContent {
             flex-direction: column-reverse;
             justify-content: flex-start;
@@ -73,6 +77,7 @@
             padding: 0;
             height: auto;
             padding-bottom: 2rem;
+            z-index: 9;
             .rightBox {
                 width: 100%;
                 margin-bottom: 2rem;
@@ -95,8 +100,10 @@
     }
     .contactPageComponent {
         overflow: hidden;
-        overflow-y: auto;
+        overflow-y: scroll;
         .contactContainer {
+            position: relative;
+            z-index: 9;
             h1{
                 font-size: 1.5rem;
             }
@@ -121,6 +128,8 @@
     .resumePageComponent {
         .resumeContent {
             width: 80%;
+            position: relative;
+            z-index: 9;
             .glassContainer {
                 flex-direction: column;
                 .contentBx {

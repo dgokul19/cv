@@ -18,6 +18,8 @@ const Navbar = () => {
             setActiveState('/');
         }
         SetMobileNav(false);
+        window.scrollTo(0, 0);
+        document.querySelector('.navigationBar').classList.remove('navBackground');
     },[pathname]);
 
     return (
