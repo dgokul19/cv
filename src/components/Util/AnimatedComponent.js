@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
 const AnimateLoaded = ( props ) => {
+    console.log({props});
     const [didMount, SetMount ] = useState(false);
 
         useEffect(() => {

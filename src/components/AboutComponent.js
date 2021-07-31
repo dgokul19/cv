@@ -44,13 +44,13 @@ const AboutComponent = () => {
                             like React.js,Next & Angular js</p>
                             <h4>Apart from programming, some other activities i love to do..</h4>
                             <ul>
-                                <li><i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                                <li><i className="fa fa-angle-double-right" aria-hidden="true"></i>
  Chess Freak - Deeply learn and explore the world of 64 squares mostly.</li>
-                                <li><i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                                <li><i className="fa fa-angle-double-right" aria-hidden="true"></i>
  Playing games - ( Cricket, Carrom, Video Games..,)</li>
-                                <li><i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                                <li><i className="fa fa-angle-double-right" aria-hidden="true"></i>
  Reading Tech Blogs..,</li>
-                                <li><i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                                <li><i className="fa fa-angle-double-right" aria-hidden="true"></i>
  Surfing & Watching movies..</li>
                             </ul>
                             <Link to="/resume" className={`knowmore`}> Explore Qualification <i className="fa fa-angle-double-right"></i></Link>

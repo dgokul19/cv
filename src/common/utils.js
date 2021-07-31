@@ -13,3 +13,14 @@ export const handleNavbarScroll = (event) => {
 export const formatBlogDate = (date = new Date()) => {
     return new Date(date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
 };
+
+// transistion Routerto the transform style property
+export const mapStyles = (styles) => {
+  return {
+    opacity: styles.opacity,
+    transform: `scale(${styles.scale})`,
+  };
+};
+
+
+

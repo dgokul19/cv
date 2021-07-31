@@ -3,3 +3,12 @@
     height: 100vh;
     font-family: var(--normal-font);
 }
+.route-wrapper {
+  position: relative;
+}
+
+.route-wrapper > div {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+}

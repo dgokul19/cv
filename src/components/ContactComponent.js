@@ -37,14 +37,14 @@ const ContactComponent = () => {
                         <div className={`contactLinks`}>
                             <h3>EMAIL</h3>
                             <ul>
-                                <li><Link href="mailto:g.dhakshinamoorthy@walmart.com">g.dhakshinamoorthy@walmart.com</Link></li>
-                                <li><Link href="mailto:dgokul19@gmail.com">dgokul19@gmail.com</Link></li>
+                                <li><a href="mailto:g.dhakshinamoorthy@walmart.com">g.dhakshinamoorthy@walmart.com</a></li>
+                                <li><a href="mailto:dgokul19@gmail.com">dgokul19@gmail.com</a></li>
                             </ul>
 
                             <h3>REACH</h3>
                             <ul>
-                                <li><Link href="mailto:g.dhakshinamoorthy@walmart.com">+91-(812)-(270)-1839</Link></li>
-                                <li><Link href="mailto:dgokul19@gmail.com">+914367 - 271839</Link></li>
+                                <li><a href="mailto:g.dhakshinamoorthy@walmart.com">+91-(812)-(270)-1839</a></li>
+                                <li><a href="mailto:dgokul19@gmail.com">+914367 - 271839</a></li>
                             </ul>
                             
                             <h3>CONNECT</h3>
