@@ -2,8 +2,10 @@ import React, { Fragment, useEffect, useState } from 'react';
 
 import { Link, useLocation } from 'react-router-dom';
  import { RiMenuFoldLine } from 'react-icons/ri';
- import { AiFillCloseCircle } from 'react-icons/ai';
+ import { AiFillCloseCircle, AiOutlineCloudDownload } from 'react-icons/ai';
 import Logo from '../assets/images/my_logo.jpeg';
+
+import ResumeMine from '../assets/docs/gokul_cv.pdf';
 
 const Navbar = () => {
     const [activeState, setActiveState] = useState('/');
@@ -33,11 +35,13 @@ const Navbar = () => {
                         <li className={activeState === 'blog' && 'active'}><Link to="/blog">Blogs</Link></li>
                         <li className={activeState === 'contact' && 'active'}><Link to="/contact">Contact</Link></li>
                     </ul>
+                    <a target="_blank" href={ResumeMine} className={`resumeBtn`}>Resume <AiOutlineCloudDownload /></a>
                 </div>
                 <div className={`mobileMenu`}>
                     <div className={`logoClx`}><Link to="/"><img src={Logo} alt={`My Logo Image`}/></Link></div>
-                    <div className={`menuBtn`} onClick={() => SetMobileNav(true)}>
-                        <RiMenuFoldLine />
+                    <div className={`menuBtn`}>
+                        <a target="_blank" href={ResumeMine} className={`resumeBtn`}>Resume <AiOutlineCloudDownload /></a>
+                        <RiMenuFoldLine  onClick={() => SetMobileNav(true)}/>
                     </div>
                 </div>
             </div>

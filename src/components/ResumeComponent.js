@@ -7,6 +7,7 @@ import {
 // Components imports
 import SocialIcons from './Util/SocialIcons';
 import SideHighlightContent from './Util/SideHighlightContent';
+import CustomToolTip from './Util/CustomTooltip';
 
 
 import { handleNavbarScroll } from '../common/utils';
@@ -102,20 +103,21 @@ const ResumeComponent = () => {
                             <h3>{`------( Primary Prowess )------`}</h3>
 
                             <ul>
-                                <li><DiHtml5 /></li>
-                                <li><DiCss3 /></li>
-                                <li><DiJavascript1 /></li>
-                                <li><DiBootstrap /></li>
-                                <li><DiJqueryLogo /></li>
-                                <li><DiSass /></li>
+                                <li><CustomToolTip direction="top" name="HTML5"><DiHtml5 /></CustomToolTip></li>
+                                <li><CustomToolTip direction="top" name="CSS3"><DiCss3 /></CustomToolTip></li>
+                                <li><CustomToolTip direction="top" name="JAVASCRIPT"><DiJavascript1 /></CustomToolTip></li>
+                                <li><CustomToolTip direction="top" name="BOOTSTRAP"><DiBootstrap /></CustomToolTip></li>
+                                <li><CustomToolTip direction="top" name="JQUERY"><DiJqueryLogo /></CustomToolTip></li>
+                                <li><CustomToolTip direction="top" name="SASS"><DiSass /></CustomToolTip></li>
+                                <li><CustomToolTip direction="top" name="PHOTOSHOP"><DiPhotoshop /></CustomToolTip></li>
                             </ul>
 
                             <ul>
-                                <li><DiAngularSimple /></li>
-                                <li><DiReact /></li>
-                                <li><DiNodejs /></li>
-                                <li><DiMysql /></li>
-                                <li><DiMongodb /></li>
+                                <li><CustomToolTip direction="top" name="ANGULAR JS"><DiAngularSimple /></CustomToolTip></li>
+                                <li><CustomToolTip direction="top" name="REACT JS"><DiReact /></CustomToolTip></li>
+                                <li><CustomToolTip direction="top" name="NODE JS"><DiNodejs /></CustomToolTip></li>
+                                <li><CustomToolTip direction="top" name="MYSQL"><DiMysql /></CustomToolTip></li>
+                                <li><CustomToolTip direction="top" name="MONGO DB"><DiMongodb /></CustomToolTip></li>
                             </ul>
                         </div>
 
@@ -123,10 +125,9 @@ const ResumeComponent = () => {
                             <h3>{`------( Rudementary Knowledge )------`}</h3>
 
                             <ul>
-                                <li><DiPhp /></li>
-                                <li><DiPython /></li>
-                                <li><DiIllustrator /></li>
-                                <li><DiMaterializecss /></li>
+                                <li><CustomToolTip direction="top" name="PHP"><DiPhp /></CustomToolTip></li>
+                                <li><CustomToolTip direction="top" name="PYTHON"><DiPython /></CustomToolTip></li>
+                                <li><CustomToolTip direction="top" name="MATERIAL UI"><DiMaterializecss /></CustomToolTip></li>
                             </ul>
                         </div>
 
@@ -134,11 +135,11 @@ const ResumeComponent = () => {
                             <h3>{`------( Tools )------`}</h3>
 
                             <ul>
-                                <li><DiGithubFull /></li>
-                                <li><DiBitbucket /></li>
-                                <li><DiNpm /></li>
-                                <li><DiJira /></li>
-                                <li><DiVisualstudio /></li>
+                                <li><CustomToolTip direction="top" name="GITHUB"><DiGithubFull /></CustomToolTip></li>
+                                <li><CustomToolTip direction="top" name="BITBUCKET"><DiBitbucket /></CustomToolTip></li>
+                                <li><CustomToolTip direction="top" name="NPM"><DiNpm /></CustomToolTip></li>
+                                <li><CustomToolTip direction="top" name="JIRA"><DiJira /></CustomToolTip></li>
+                                <li><CustomToolTip direction="top" name="VS CODE"><DiVisualstudio /></CustomToolTip></li>
                             </ul>
                         </div>
 
@@ -146,8 +147,8 @@ const ResumeComponent = () => {
                             <h3>{`------( Operating System )------`}</h3>
 
                             <ul>
-                                <li><DiWindows /></li>
-                                <li><DiLinux /></li>
+                                <li><CustomToolTip direction="top" name="WINDOWS"><DiWindows /></CustomToolTip></li>
+                                <li><CustomToolTip direction="top" name="LINUX"><DiLinux /></CustomToolTip></li>
                             </ul>
                         </div>
 

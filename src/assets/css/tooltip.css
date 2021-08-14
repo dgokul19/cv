@@ -1,0 +1,21 @@
+.tooltipContainer {
+    position: relative;
+}
+.tooltipContainer .tooltpBox{
+    padding: 10px 20px;
+    background-color: rgba(0,0,0,.7);
+    border: 1px solid rgba(56,56,56,1);
+    border-radius: 10px;
+    position: absolute;
+    transform: scale(0);
+    opacity: 0;
+    transition: .2s ease-in all;
+    box-shadow: 0px 3px 3px -2px rgb(0 0 0 / 20%), 0px 3px 4px 0px rgb(0 0 0 / 14%), 0px 1px 8px 0px rgb(0 0 0 / 12%);
+    max-width: 300px;
+    white-space: nowrap;
+    font-weight: 700;
+}
+.tooltipContainer:hover > .tooltpBox{
+        opacity: 1;
+        transform: scale(1);
+}

@@ -29,12 +29,21 @@ img{
         .menuContent ul li a {
             color: var(--primary-dark-grey);
         }
+        .resumeBtn {
+            border-color: var(--primary-dark-grey);
+            color: var(--primary-dark-grey);
+            &:hover{
+                background-color: var(--primary-dark-grey);
+                color: var(--active-nav-link);
+            }
+        }
     }
     .menuContent {
         font-family: var(--logo-font);
         width: 80%;
         height: 100%;
         margin:0 auto;
+        position: relative;
         ul {
             list-style: none;
             width: 60%;
@@ -88,6 +97,12 @@ img{
                     }
                 }
             }
+        }
+        .resumeBtn {
+            position: absolute;
+            top:10px;
+            left:100%;
+            cursor: pointer;
         }
     }
 }
@@ -178,6 +193,29 @@ img{
         position: absolute;
         left: -100px;
         top: 25px;
+    }
+}
+.resumeBtn{
+    width: 110px;
+    background-color: transparent;
+    border: 1px solid #fff;
+    border-radius: 30px;
+    height: 36px;
+    color: #fff;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+    transition: .2s linear all;
+    text-decoration: none;
+    svg {
+        font-size: 18px;
+        margin-left: 5px;
+    }
+    &:hover{
+        background-color: #fff;
+        color: rgba(1, 1, 1, 1);
     }
 }
 
