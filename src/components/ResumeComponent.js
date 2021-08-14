@@ -11,7 +11,7 @@ import SideHighlightContent from './Util/SideHighlightContent';
 
 import { handleNavbarScroll } from '../common/utils';
 
-import gokulanresume from '../assets/docs/gokulan_cv.pdf';
+import gokulanresume from '../assets/docs/gokul_cv.pdf';
 
 const ResumeComponent = () => {
     
