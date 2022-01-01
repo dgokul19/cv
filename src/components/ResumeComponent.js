@@ -122,7 +122,7 @@ const ResumeComponent = () => {
                         </div>
 
                         <div className={`skillSection`}>
-                            <h3>{`------( Rudementary Knowledge )------`}</h3>
+                            <h3>{`------( Rudimentary Knowledge )------`}</h3>
 
                             <ul>
                                 <li><CustomToolTip direction="top" name="PHP"><DiPhp /></CustomToolTip></li>
