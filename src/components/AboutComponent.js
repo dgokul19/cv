@@ -6,7 +6,7 @@ import { handleNavbarScroll } from '../common/utils';
 
 import AboutPic from '../assets/images/pic_02.jpeg';
 const AboutComponent = () => {
-    const totalExperience = new Date().getFullYear() - 2015;
+    const totalExperience = 7+;
     useEffect(() => {
         let scrollElement = document.querySelector('.aboutPageComponent');
         scrollElement.addEventListener('scroll', handleNavbarScroll);
