@@ -18,9 +18,8 @@ const AboutComponent = () => {
         // convert date into unique integer month value based on year 1900
         function m1900(yyyymmdd) {
             if(!yyyymmdd){
-                yyyymmdd = moment(new Date()).format('yyyy-mm-DD');
+                yyyymmdd = moment(new Date()).format('YYYY-MM-DD');
             }
-
             const [_, y, m, d] = yyyymmdd.match(/^(\d{4})-(\d{2})-(\d{2})$/).map(Number);
             return (y - 1900) * 12 + m;
         }
