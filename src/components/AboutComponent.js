@@ -1,12 +1,38 @@
-import React, {Fragment, useEffect} from 'react';
+import React, {Fragment, useEffect, useMemo} from 'react';
+import moment from "moment";
 import {Link} from 'react-router-dom';
+
 import SocialIcons from './Util/SocialIcons';
 import SideHighlightContent from './Util/SideHighlightContent';
+
+import { EXP_CONSTANT } from "../common/helper";
 import { handleNavbarScroll } from '../common/utils';
 
 import AboutPic from '../assets/images/pic_02.jpeg';
 const AboutComponent = () => {
-    const totalExperience = 7+;
+    
+
+    const totalExperience = useMemo(() => {
+        const months = new Set();
+
+        // convert date into unique integer month value based on year 1900
+        function m1900(yyyymmdd) {
+            if(!yyyymmdd){
+                yyyymmdd = moment(new Date()).format('yyyy-mm-DD');
+            }
+
+            const [_, y, m, d] = yyyymmdd.match(/^(\d{4})-(\d{2})-(\d{2})$/).map(Number);
+            return (y - 1900) * 12 + m;
+        }
+
+        EXP_CONSTANT.forEach(job => {
+            const m1 = m1900(job?.joiningDate);
+            const m2 = m1900(job?.endingDate);
+            for (let m = m1; m < m2; m++) months.add(m);
+        });
+        return (months.size / 12).toFixed(2).split('.').shift();
+    },[]);
+
     useEffect(() => {
         let scrollElement = document.querySelector('.aboutPageComponent');
         scrollElement.addEventListener('scroll', handleNavbarScroll);
@@ -38,10 +64,7 @@ const AboutComponent = () => {
                             <p>I possess over {totalExperience}+ years of experience in design, development, and implementation of software/applications of 
                             various enterprise projects in the Information & Technology Industry with excellent knowledge of Object-oriented 
                             programming concepts.</p>
-                            <p>I love to generate new ideas and devise feasible solutions to broadly relevant problems.</p>
 
-                            <p>Whenever possible, I also apply my passion for developing products with Node.js and Modern Javascript Library and Frameworks 
-                            like React.js,Next & Angular js</p>
                             <h4>Apart from programming, some other activities i love to do..</h4>
                             <ul>
                                 <li><i className="fa fa-angle-double-right" aria-hidden="true"></i>

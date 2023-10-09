@@ -145,11 +145,11 @@ img{
 .sideFadedContent {
     position: fixed;
     z-index: 99;
-    font-size: 5rem;
+    font-size: 4rem;
     writing-mode :vertical-lr;
     top: 20%;
     color: rgba(240, 248, 255, .14);
-    right: -5%;
+    right: 3%;
 }
 .wave {
     animation-name: wave-animation; /* Refers to the name of your @keyframes element below */

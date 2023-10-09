@@ -12,7 +12,7 @@ import CustomToolTip from './Util/CustomTooltip';
 
 import { handleNavbarScroll } from '../common/utils';
 
-import gokulanresume from '../assets/docs/gokul_cv.pdf';
+import gokulanresume from '../assets/docs/gokulan.pdf';
 
 const ResumeComponent = () => {
     
