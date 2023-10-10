@@ -1,8 +1,8 @@
 import React, { Fragment, useEffect } from 'react';
 import {
     DiHtml5, DiCss3, DiJavascript1, DiBootstrap, DiJqueryLogo,
-    DiAngularSimple, DiReact, DiNodejs, DiMysql, DiMongodb, DiPhp, DiPython, DiPhotoshop, DiIllustrator,
-    DiMaterializecss, DiGithubFull, DiBitbucket, DiJira, DiGoogleDrive, DiVisualstudio, DiSass, DiNpm, DiWindows, DiLinux
+    DiAngularSimple, DiReact, DiNodejs, DiMysql, DiMongodb, DiPhp, DiGo, DiPhotoshop,
+    DiMaterializecss, DiGithubFull, DiBitbucket, DiJira, DiVisualstudio, DiSass, DiNpm, DiWindows, DiLinux, DiJenkins
 } from 'react-icons/di';
 // Components imports
 import SocialIcons from './Util/SocialIcons';
@@ -65,8 +65,13 @@ const ResumeComponent = () => {
                                 <h1>Experience</h1>
                                 <ul>
                                     <li>
+                                        <h4>Senior Software Engineer</h4>
+                                        <span className={`timeLine`}>{` Nov 2022 - Present`}</span>
+                                        <p>Technopals Pvt Ltd ( DBS Bank ),Singapore</p>
+                                    </li>
+                                    <li>
                                         <h4>Software Engineer IN3</h4>
-                                        <span className={`timeLine`}>{` May 2020 - Present`}</span>
+                                        <span className={`timeLine`}>{` May 2020 - Nov 2022`}</span>
                                         <p>Walmart Global Tech,Chennai</p>
                                     </li>
 
@@ -126,7 +131,7 @@ const ResumeComponent = () => {
 
                             <ul>
                                 <li><CustomToolTip direction="top" name="PHP"><DiPhp /></CustomToolTip></li>
-                                <li><CustomToolTip direction="top" name="PYTHON"><DiPython /></CustomToolTip></li>
+                                <li><CustomToolTip direction="top" name="Golang"><DiGo /></CustomToolTip></li>
                                 <li><CustomToolTip direction="top" name="MATERIAL UI"><DiMaterializecss /></CustomToolTip></li>
                             </ul>
                         </div>
@@ -137,6 +142,7 @@ const ResumeComponent = () => {
                             <ul>
                                 <li><CustomToolTip direction="top" name="GITHUB"><DiGithubFull /></CustomToolTip></li>
                                 <li><CustomToolTip direction="top" name="BITBUCKET"><DiBitbucket /></CustomToolTip></li>
+                                <li><CustomToolTip direction="top" name="JENKINS"><DiJenkins /></CustomToolTip></li>
                                 <li><CustomToolTip direction="top" name="NPM"><DiNpm /></CustomToolTip></li>
                                 <li><CustomToolTip direction="top" name="JIRA"><DiJira /></CustomToolTip></li>
                                 <li><CustomToolTip direction="top" name="VS CODE"><DiVisualstudio /></CustomToolTip></li>
