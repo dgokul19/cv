@@ -8,7 +8,7 @@ import SideHighlightContent from './Util/SideHighlightContent';
 import { EXP_CONSTANT } from "../common/helper";
 import { handleNavbarScroll } from '../common/utils';
 
-import AboutPic from '../assets/images/pic_02.jpeg';
+import AboutPic from '../assets/images/pic_02.jpg';
 const AboutComponent = () => {
     
 
@@ -67,13 +67,13 @@ const AboutComponent = () => {
                             <h4>Apart from programming, some other activities i love to do..</h4>
                             <ul>
                                 <li><i className="fa fa-angle-double-right" aria-hidden="true"></i>
- Chess Freak - Deeply learn and explore the world of 64 squares mostly.</li>
+ Chess Freak - Deeply learn and explore the world of 64 squares.</li>
                                 <li><i className="fa fa-angle-double-right" aria-hidden="true"></i>
  Playing games - ( Cricket, Carrom, Video Games..,)</li>
                                 <li><i className="fa fa-angle-double-right" aria-hidden="true"></i>
  Reading Tech Blogs..,</li>
                                 <li><i className="fa fa-angle-double-right" aria-hidden="true"></i>
- Surfing & Watching movies..</li>
+ Internet Surfing & Watching movies..</li>
                             </ul>
                             <Link to="/resume" className={`knowmore`}> Explore Qualification <i className="fa fa-angle-double-right"></i></Link>
                         </div>

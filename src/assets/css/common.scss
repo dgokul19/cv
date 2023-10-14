@@ -150,6 +150,9 @@ img{
     top: 20%;
     color: rgba(240, 248, 255, .14);
     right: 3%;
+    h1{
+        margin: 0;
+    }
 }
 .wave {
     animation-name: wave-animation; /* Refers to the name of your @keyframes element below */

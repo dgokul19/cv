@@ -78,19 +78,19 @@
             padding-left: 5em;
             position: relative;
             .aboutPic {
-                width: 220px;
-                height: 220px;
+                width: 120px;
+                height: 120px;
                 border-radius: 50%;
                 overflow: hidden;
                 padding: 1em;
-                border: 10px solid var(--primary-grey);
-                // margin: auto;
+                border: 3px solid var(--primary-grey);
+                margin: 0 14%;
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 img {
-                    width: 120%;
-                    height: 120%;
+                    width: 130%;
+                    height: 130%;
                     object-fit: cover;
                 }
             }
