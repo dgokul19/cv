@@ -5,7 +5,7 @@ import { Link, useLocation } from 'react-router-dom';
  import { AiFillCloseCircle, AiOutlineCloudDownload } from 'react-icons/ai';
 import Logo from '../assets/images/my_logo.jpeg';
 
-import ResumeMine from '../assets/docs/gokulan.pdf';
+import ResumeMine from '../assets/docs/gokulan-dhatchinamoorthy.pdf';
 
 const Navbar = () => {
     const [activeState, setActiveState] = useState('/');
