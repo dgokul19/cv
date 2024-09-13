@@ -1,12 +1,12 @@
 {
   "files": {
     "main.css": "/cv/static/css/main.68cece52.css",
-    "main.js": "/cv/static/js/main.82ae2901.js",
+    "main.js": "/cv/static/js/main.38529dc9.js",
     "static/js/206.687cc247.chunk.js": "/cv/static/js/206.687cc247.chunk.js",
     "static/media/landing_bg.jpg": "/cv/static/media/landing_bg.65cdea91f2887c66fecc.jpg",
-    "static/media/gokulan-dhatchinamoorthy.pdf": "/cv/static/media/gokulan-dhatchinamoorthy.842d5187533231bc4328.pdf",
     "static/media/pic_02.jpg": "/cv/static/media/pic_02.384cfaefce9f03fcf679.jpg",
     "static/media/resume_bg.jpg": "/cv/static/media/resume_bg.9501d9a116a1ad18d2f1.jpg",
+    "static/media/gokulan-dhatchinamoorthy.pdf": "/cv/static/media/gokulan-dhatchinamoorthy.7920f18f155475917ba7.pdf",
     "static/media/contact_bg.jpg": "/cv/static/media/contact_bg.e299495c02fe64957875.jpg",
     "static/media/blog_bg.jpg": "/cv/static/media/blog_bg.f49a32af51a6e2c47cba.jpg",
     "static/media/about_bg.jpg": "/cv/static/media/about_bg.77ad9ea7a0b78aa42b32.jpg",
@@ -16,6 +16,6 @@
   },
   "entrypoints": [
     "static/css/main.68cece52.css",
-    "static/js/main.82ae2901.js"
+    "static/js/main.38529dc9.js"
   ]
 }
