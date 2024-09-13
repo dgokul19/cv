@@ -30,7 +30,7 @@ export const EXP_CONSTANT = [
     {
         "companyName"   : 'Technopals Pvt Ltd',
         "joiningDate"   : '2022-11-21',
-        "endingDate"    : null,
+        "endingDate"    : '2024-07-31',
         "designation"   : 'Senior Software Engineer',
         "location"      : 'Chennai'    
     },

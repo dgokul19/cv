@@ -66,8 +66,9 @@ const ResumeComponent = () => {
                                 <ul>
                                     <li>
                                         <h4>Senior Software Engineer</h4>
-                                        <span className={`timeLine`}>{` Nov 2022 - Present`}</span>
-                                        <p>Technopals Pvt Ltd ( DBS Bank ),Singapore</p>
+                                        <span className={`timeLine`}>{` Nov 2022 - July 2024`}</span>
+                                        <p>DBS Bank</p>
+                                        <p>Vendor - Technopals Pvt Ltd, Singapore</p>
                                     </li>
                                     <li>
                                         <h4>Software Engineer IN3</h4>
@@ -131,7 +132,7 @@ const ResumeComponent = () => {
 
                             <ul>
                                 <li><CustomToolTip direction="top" name="PHP"><DiPhp /></CustomToolTip></li>
-                                <li><CustomToolTip direction="top" name="Golang"><DiGo /></CustomToolTip></li>
+                                {/* <li><CustomToolTip direction="top" name="Java"><DiJava /></CustomToolTip></li> */}
                                 <li><CustomToolTip direction="top" name="MATERIAL UI"><DiMaterializecss /></CustomToolTip></li>
                             </ul>
                         </div>

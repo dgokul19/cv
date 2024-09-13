@@ -29,7 +29,8 @@ const AboutComponent = () => {
             const m2 = m1900(job?.endingDate);
             for (let m = m1; m < m2; m++) months.add(m);
         });
-        return (months.size / 12).toFixed(2).split('.').shift();
+        // return (months.size / 12).toFixed(2).split('.').shift();
+        return 8;
     },[]);
 
     useEffect(() => {
