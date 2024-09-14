@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom';
 import TypeComponent from './Util/Typewritter';
 import SocialIcons from './Util/SocialIcons';
 
-import profPic from '../assets/images/pic_01.jpeg';
+import profPic from '../assets/images/pic_01.png';
 import { handleNavbarScroll } from '../common/utils';
 
 const LandingComponent = () => {

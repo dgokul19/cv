@@ -97,8 +97,25 @@
             height: 500px;
             object-fit: contain;
             border-radius: 50%;
-            overflow: hidden;
             margin-left: 100px;
+            position: relative;
+            &:after{
+                position: absolute;
+                left: -1%;
+                top: -1%;
+                border-radius: 50%;
+                content: '';
+                display: inline-block;
+                width: 103%;
+                height: 103%;
+                border: 2px solid var(--active-nav-link);
+            }
+            img {
+                margin: 1%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 50%;
+            }
         }
     }
 }
