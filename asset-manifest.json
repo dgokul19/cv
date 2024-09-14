@@ -1,8 +1,9 @@
 {
   "files": {
-    "main.css": "/cv/static/css/main.68cece52.css",
-    "main.js": "/cv/static/js/main.38529dc9.js",
+    "main.css": "/cv/static/css/main.7f8ed063.css",
+    "main.js": "/cv/static/js/main.16b0cfcf.js",
     "static/js/206.687cc247.chunk.js": "/cv/static/js/206.687cc247.chunk.js",
+    "static/media/pic_01.png": "/cv/static/media/pic_01.28a014dbe7529db7d2f3.png",
     "static/media/landing_bg.jpg": "/cv/static/media/landing_bg.65cdea91f2887c66fecc.jpg",
     "static/media/pic_02.jpg": "/cv/static/media/pic_02.384cfaefce9f03fcf679.jpg",
     "static/media/resume_bg.jpg": "/cv/static/media/resume_bg.9501d9a116a1ad18d2f1.jpg",
@@ -10,12 +11,11 @@
     "static/media/contact_bg.jpg": "/cv/static/media/contact_bg.e299495c02fe64957875.jpg",
     "static/media/blog_bg.jpg": "/cv/static/media/blog_bg.f49a32af51a6e2c47cba.jpg",
     "static/media/about_bg.jpg": "/cv/static/media/about_bg.77ad9ea7a0b78aa42b32.jpg",
-    "static/media/pic_01.jpeg": "/cv/static/media/pic_01.7f7c4ac7dc47171d411b.jpeg",
     "static/media/my_logo.jpeg": "/cv/static/media/my_logo.c6b74ad35d541a3fe8dd.jpeg",
     "index.html": "/cv/index.html"
   },
   "entrypoints": [
-    "static/css/main.68cece52.css",
-    "static/js/main.38529dc9.js"
+    "static/css/main.7f8ed063.css",
+    "static/js/main.16b0cfcf.js"
   ]
 }
